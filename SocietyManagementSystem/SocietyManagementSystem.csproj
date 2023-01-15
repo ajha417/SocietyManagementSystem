@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Asset\Images\e-housing.jpg" />
     <Content Include="Asset\Images\EHousing.jpg" />
     <Content Include="Asset\Images\EHousingg.jpg" />
     <Content Include="Asset\Libs\Bootstrap\css\bootstrap-grid.css" />
@@ -93,6 +94,10 @@
     <Content Include="Asset\Libs\Bootstrap\js\bootstrap.min.js" />
     <Content Include="View\Admin\AddHouse.aspx" />
     <Content Include="View\Admin\AddSociety.aspx" />
+    <Content Include="View\LoginPage.aspx" />
+    <Content Include="View\Users\Home.aspx" />
+    <Content Include="View\Users\MemberLogin.aspx" />
+    <Content Include="View\Users\SocietyList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +123,41 @@
     </Compile>
     <Compile Include="View\Admin\AdminMasterPage.Master.designer.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Users\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Users\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Users\MemberLogin.aspx.cs">
+      <DependentUpon>MemberLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Users\MemberLogin.aspx.designer.cs">
+      <DependentUpon>MemberLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Users\SocietyList.aspx.cs">
+      <DependentUpon>SocietyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Users\SocietyList.aspx.designer.cs">
+      <DependentUpon>SocietyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Users\UserMasterPage.Master.cs">
+      <DependentUpon>UserMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Users\UserMasterPage.Master.designer.cs">
+      <DependentUpon>UserMasterPage.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +185,7 @@
     <Content Include="Asset\Libs\Bootstrap\js\bootstrap.min.js.map" />
     <None Include="packages.config" />
     <Content Include="View\Admin\AdminMasterPage.Master" />
+    <Content Include="View\Users\UserMasterPage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -152,9 +193,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\Seller\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

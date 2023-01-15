@@ -97,6 +97,7 @@
     <Content Include="View\LoginPage.aspx" />
     <Content Include="View\Users\Home.aspx" />
     <Content Include="View\Users\MemberLogin.aspx" />
+    <Content Include="View\Users\Search.aspx" />
     <Content Include="View\Users\SocietyList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -144,6 +145,13 @@
     </Compile>
     <Compile Include="View\Users\MemberLogin.aspx.designer.cs">
       <DependentUpon>MemberLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Users\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Users\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Users\SocietyList.aspx.cs">
       <DependentUpon>SocietyList.aspx</DependentUpon>

@@ -29,7 +29,7 @@
             <div class="col-md-4">
                 <div class="form-group">
                         <label for="AddressTb">Address:</label>
-                        <input type="text" class="form-control" id="Address" runat="server">
+                        <input type="text" class="form-control" id="AddressTb" runat="server">
                 </div>
             </div>
         </div>
@@ -52,26 +52,44 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="form-group">
-                     <label for="ImageTb">Upload file:</label>
-                     <input type="file" class="form-control" id="ImageTb" runat="server">
+                        <asp:FileUpload ID="FileUpload1" runat="server" />  
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                      <label for="ExDate">Expriry Date:</label>
+                        <input type="date" class="form-control" id="ExDate" runat="server">
                 </div>
             </div>
         </div>
       <div class="col-md-4">
             <label runat="server" id="ErrMsg" class="text-danger"></label><br />
-            <asp:Button Text="  Add Society  " class="btn mt-3 btn-success" runat="server" ID="AddSocietyBtn"  />
-            <asp:Button Text="Update" class="btn mt-3 btn-warning" runat="server" ID="UpdateSocietyBtn"  />
-            <asp:Button Text="Delete" class="btn mt-3 btn-danger" runat="server" ID="DeleteSocietyBtn"  />
+            <asp:Button Text="  Add Society  " class="btn mt-3 btn-success" runat="server" ID="AddSocietyBtn" OnClick="AddSocietyBtn_Click"  />
+            <asp:Button Text="Update" class="btn mt-3 btn-warning" runat="server" ID="UpdateSocietyBtn" OnClick="UpdateSocietyBtn_Click"  />
+            <asp:Button Text="Delete" class="btn mt-3 btn-danger" runat="server" ID="DeleteSocietyBtn" OnClick="DeleteSocietyBtn_Click"  />
       </div>
 
-    </div>
         <div class="col-md-8">
 
                 <!--table here-->
-                <asp:GridView runat="server" ID="ProductsGV" class="table table-hover" AutoGenerateSelectButton="True" >
+                <asp:GridView runat="server" ID="ProductsGV" class="table table-hover" AutoGenerateSelectButton="True" style="margin-top:-400px" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="ProductsGV_SelectedIndexChanged">
+                    <AlternatingRowStyle BackColor="White" />
+                    <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
+                    <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
+                    <SortedAscendingCellStyle BackColor="#FDF5AC" />
+                    <SortedAscendingHeaderStyle BackColor="#4D0000" />
+                    <SortedDescendingCellStyle BackColor="#FCF6C0" />
+                    <SortedDescendingHeaderStyle BackColor="#820000" />
 
                 </asp:GridView>
             </div>
+    </div>
      </div>
 </asp:Content>
 

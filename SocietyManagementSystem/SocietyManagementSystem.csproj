@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Asset\css\addmember.css" />
     <Content Include="Asset\Images\EHousing.jpg" />
     <Content Include="Asset\Images\EHousingg.jpg" />
     <Content Include="Asset\Libs\Bootstrap\css\bootstrap-grid.css" />
@@ -92,8 +93,11 @@
     <Content Include="Asset\Libs\Bootstrap\js\bootstrap.js" />
     <Content Include="Asset\Libs\Bootstrap\js\bootstrap.min.js" />
     <Content Include="View\Admin\AddHouse.aspx" />
+    <Content Include="View\Admin\AddMember.aspx" />
     <Content Include="View\Admin\AddSociety.aspx" />
+    <Content Include="View\Admin\Complain.aspx" />
     <Content Include="View\Admin\VHouse.aspx" />
+    <Content Include="View\Admin\VMember.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +109,13 @@
     </Compile>
     <Compile Include="View\Admin\AddHouse.aspx.designer.cs">
       <DependentUpon>AddHouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\AddMember.aspx.cs">
+      <DependentUpon>AddMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\AddMember.aspx.designer.cs">
+      <DependentUpon>AddMember.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Admin\AddSociety.aspx.cs">
       <DependentUpon>AddSociety.aspx</DependentUpon>
@@ -120,12 +131,26 @@
     <Compile Include="View\Admin\AdminMasterPage.Master.designer.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="View\Admin\Complain.aspx.cs">
+      <DependentUpon>Complain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\Complain.aspx.designer.cs">
+      <DependentUpon>Complain.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\Admin\VHouse.aspx.cs">
       <DependentUpon>VHouse.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="View\Admin\VHouse.aspx.designer.cs">
       <DependentUpon>VHouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\VMember.aspx.cs">
+      <DependentUpon>VMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\VMember.aspx.designer.cs">
+      <DependentUpon>VMember.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +186,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="upload\" />
     <Folder Include="View\Seller\" />
   </ItemGroup>
   <PropertyGroup>

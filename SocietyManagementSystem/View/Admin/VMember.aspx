@@ -1,12 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMasterPage.Master" AutoEventWireup="true" CodeBehind="VHouse.aspx.cs" Inherits="SocietyManagementSystem.View.Admin.VHouse" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMasterPage.Master" AutoEventWireup="true" CodeBehind="VMember.aspx.cs" Inherits="SocietyManagementSystem.View.Admin.VMember" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
         <div class="row">
             <div style="text-align:center;background:#ff6a00;color:white;font-weight:bolder;height:50px;padding-top:10px;font-size:20px">
-                <asp:Label Text="HOUSE REPORT" runat="server"/>
+                <asp:Label Text="MEMBER REPORT" runat="server"/>
             </div>
         </div>
         <div class="row" style="margin-top:30px">
@@ -31,10 +31,10 @@
                     </div>
               </div>
         </div>
-            <asp:Label Text="" ID="status" runat="server" />
+            <asp:Label Text="" ID="statusMember" runat="server" />
             <br/><br/>
            <div class="row">
-                    <asp:GridView ID="HouseViewGV" runat="server" class="table" CellPadding="4" ForeColor="#333333" GridLines="None">
+                    <asp:GridView ID="MemberViewGV" runat="server" class="table" CellPadding="4" ForeColor="#333333" GridLines="None">
                         <AlternatingRowStyle BackColor="White" />
                         <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
                         <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />

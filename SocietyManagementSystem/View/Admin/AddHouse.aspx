@@ -15,24 +15,21 @@
                 <div class="form-group">
                         <label for="SNameTb">Society:</label>
                         
-                    <asp:DropDownList ID="DropDownList1" runat="server">
-                        <asp:ListItem Selected="True">Arvind Society</asp:ListItem>
-                        <asp:ListItem></asp:ListItem>
-                        <asp:ListItem></asp:ListItem>
-                        <asp:ListItem></asp:ListItem>
+                    <asp:DropDownList ID="SocietyCB" runat="server">
+                        
                         
                         </asp:DropDownList>
-                    <asp:Label Text="Total House-" runat="server" Visible="False"/>
-                    <asp:Label Text="number" ID="totalHouse" runat="server" Visible="False"/>
+                    <asp:Label Text="Total House-" runat="server" Visible="True"/>
+                    <asp:Label Text="0" ID="totalHouse" runat="server" Visible="True"/>
 
                     </div>
                 <div>
-                    <asp:Label Text="Allocated House-" runat="server" Visible="False" />
-                    <asp:label Text="number" ID="allocatedHouse" runat="server" Visible="false"/>
+                    <asp:Label Text="Allocated House-" runat="server" Visible="True" />
+                    <asp:label Text="0" ID="allocatedHouse" runat="server" Visible="True"/>
                 </div>
                 <div>
-                    <asp:Label Text="Remaining House-" runat="server" Visible="False"/>
-                    <asp:Label Text="number" ID="remainingHouse" runat="server" Visible="False"/>
+                    <asp:Label Text="Remaining House-" runat="server" Visible="True"/>
+                    <asp:Label Text="0" ID="remainingHouse" runat="server" Visible="True"/>
                 </div>
             </div>
         </div>
@@ -52,10 +49,11 @@
                 <div class="form-group">
                         <label for="AddressDV">House Type:</label>
                         <asp:DropDownList ID="AddressDV" runat="server">
+                            <asp:ListItem>1BHK</asp:ListItem>
+                            <asp:ListItem>2BHK</asp:ListItem>
                             <asp:ListItem>3BHK</asp:ListItem>
                             <asp:ListItem>4BHK</asp:ListItem>
-                            <asp:ListItem>1BHK</asp:ListItem>
-                            <asp:ListItem></asp:ListItem>
+                            <asp:ListItem>5BHK</asp:ListItem>
                         </asp:DropDownList>
                 </div>
             </div>

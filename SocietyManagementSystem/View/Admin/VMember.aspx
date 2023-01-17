@@ -23,7 +23,7 @@
                         
                         </asp:DropDownList>
                           </div>
-                        <asp:Button Text=" View " class="btn mt-3 btn-success" runat="server" ID="ViewButton"  style="margin-left:10px"/>
+                        <asp:Button Text=" View " class="btn mt-3 btn-success" runat="server" ID="ViewButton"  style="margin-left:10px" OnClick="ViewButton_Click"/>
                           
                     <div class="col-md-2">
                     </div>

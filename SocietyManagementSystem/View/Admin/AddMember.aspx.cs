@@ -62,6 +62,7 @@ namespace SocietyManagementSystem.View.Admin
                     string path;
                     if (photoFile.HasFile)
                         photoFile.SaveAs(HttpContext.Current.Request.PhysicalApplicationPath + "userupload/" + photoFile.FileName);
+                    path = photoFile.FileName;
                     string firstnameStr = firstnameTV.Value;
                     string lastnameStr = lastnameTV.Value;
                     string emailStr = emailTV.Value;
@@ -83,10 +84,13 @@ namespace SocietyManagementSystem.View.Admin
                     SocietyData = Convert.ToInt32(UserGV.Rows[0].Cells[0].Text);
                     HouseData = Convert.ToInt32(UserGV.Rows[0].Cells[1].Text);
                     societyData.Text = UserGV.Rows[0].Cells[0].ToString();
+                    houseData.Text = UserGV.Rows[0].Cells[0].ToString();
 
                     string Query = "INSERT INTO UserMst Values('{0}','{1}','{2}','{3}','{4}',{5},{6},{7},'{8}','{9}','{10}','{11}')";
                    // Query = string.Format(Query,)
-                   Query = string.Format(Query,firstnameStr,lastnameStr,);
+                   Query = string.Format(Query,firstnameStr,lastnameStr,emailStr,mobileStr,birthDateStr,houseno,SocietyData,totalMemberStr,usernameStr,passwordStr,path,ExDateStr, societyNameDD.SelectedItem.ToString());
+                   conn.setData(Query);
+                    ErrMsgi.InnerText= "Member added successfully!!!";
 
                 }
 

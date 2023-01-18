@@ -68,8 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Asset\css\addmember.css" />
+    <Content Include="Asset\Images\e-housing.jpg" />
     <Content Include="Asset\Images\EHousing.jpg" />
     <Content Include="Asset\Images\EHousingg.jpg" />
+    <Content Include="Asset\Images\societyImage1.jpg" />
+    <Content Include="Asset\Images\societyImage2.jpg" />
+    <Content Include="Asset\Images\societyImage3.jpg" />
     <Content Include="Asset\Libs\Bootstrap\css\bootstrap-grid.css" />
     <Content Include="Asset\Libs\Bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="Asset\Libs\Bootstrap\css\bootstrap-grid.rtl.css" />
@@ -98,6 +102,12 @@
     <Content Include="View\Admin\Complain.aspx" />
     <Content Include="View\Admin\VHouse.aspx" />
     <Content Include="View\Admin\VMember.aspx" />
+    <Content Include="View\User\AdminLogin.aspx" />
+    <Content Include="View\User\ContactUs.aspx" />
+    <Content Include="View\User\HomePage.aspx" />
+    <Content Include="View\User\RentList.aspx" />
+    <Content Include="View\User\Search.aspx" />
+    <Content Include="View\User\SellList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -152,6 +162,62 @@
     <Compile Include="View\Admin\VMember.aspx.designer.cs">
       <DependentUpon>VMember.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\Member\MemberMasterPage.Master.cs">
+      <DependentUpon>MemberMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Member\MemberMasterPage.Master.designer.cs">
+      <DependentUpon>MemberMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\RentList.aspx.cs">
+      <DependentUpon>RentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\RentList.aspx.designer.cs">
+      <DependentUpon>RentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\SellList.aspx.cs">
+      <DependentUpon>SellList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\SellList.aspx.designer.cs">
+      <DependentUpon>SellList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\UserMasterPage.Master.cs">
+      <DependentUpon>UserMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\UserMasterPage.Master.designer.cs">
+      <DependentUpon>UserMasterPage.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Asset\Libs\Bootstrap\css\bootstrap-grid.css.map" />
@@ -178,6 +244,8 @@
     <Content Include="Asset\Libs\Bootstrap\js\bootstrap.min.js.map" />
     <None Include="packages.config" />
     <Content Include="View\Admin\AdminMasterPage.Master" />
+    <Content Include="View\User\UserMasterPage.Master" />
+    <Content Include="View\Member\MemberMasterPage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -188,7 +256,6 @@
   <ItemGroup>
     <Folder Include="upload\" />
     <Folder Include="userupload\" />
-    <Folder Include="View\Seller\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

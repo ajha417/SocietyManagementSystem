@@ -15,9 +15,18 @@ namespace SocietyManagementSystem.View.Admin
             Conn = new Models.Functions();
             if (!this.IsPostBack)
             {
-               // GetSocieties();
+                GetSocieties();
 
             }
+        }
+        public void GetSocieties()
+        {
+            String Query = "SELECT * FROM SocietyMst";
+            selectSociety.DataTextField = Conn.getData(Query).Columns["Sname"].ToString();
+            selectSociety.DataValueField = Conn.getData(Query).Columns["SID"].ToString();
+            selectSociety.DataSource = Conn.getData(Query);
+            selectSociety.DataBind();
+
         }
         public override void VerifyRenderingInServerForm(Control control)
         {
@@ -25,7 +34,17 @@ namespace SocietyManagementSystem.View.Admin
         }
         protected void ViewButton_Click(object sender, EventArgs e)
         {
-
+            string snammme = selectSociety.SelectedItem.ToString();
+            try
+            {
+                string Query = "SELECT Image,FName as FirstName,LName as LastName,Email as EmailAddress,Mobile,Member FROM UserMst WHERE SocietyName='"+snammme+"'";
+                MemberViewGV.DataSource = Conn.getData(Query);
+                MemberViewGV.DataBind();
+            }
+            catch(Exception ex)
+            {
+                Errmsg.InnerText = ex.Message;
+            }
         }
     }
 }

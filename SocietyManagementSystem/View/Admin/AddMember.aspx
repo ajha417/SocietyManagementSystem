@@ -77,16 +77,16 @@
                             <asp:Button Text="ADD member" class="btn btn-success mt-2 md-7" ID="addmemberTV" runat="server" OnClick="addmemberTV_Click" />
                         </div>
                         <div>
-                            <label runat="server" id="ErrMsgi" class="text-danger"></label>
+                            <label runat="server" id="ErrMsgi" class="text-success"></label>
                         </div>
                         <div>
-                            <asp:Label ID="societyData" runat="server" Text="Label" Visible="false"></asp:Label>
+                            <label runat="server" id="societyData" class="text-danger" visible="false"></label>
                         </div>
                         <div>
-                            <asp:Label ID="houseData" runat="server" Text="Label2" Visible="false"></asp:Label>
+                            <label runat="server" id="houseData" class="text-danger" visible="false"></label>
                         </div>
                         <div>
-                            <asp:GridView ID="UserGV" runat="server"></asp:GridView>
+                            <asp:GridView ID="UserGV" runat="server" Visible="false"></asp:GridView>
                         </div>
                     </div>
 

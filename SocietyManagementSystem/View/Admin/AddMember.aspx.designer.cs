@@ -156,7 +156,7 @@ namespace SocietyManagementSystem.View.Admin
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label societyData;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl societyData;
 
         /// <summary>
         /// houseData control.
@@ -165,7 +165,7 @@ namespace SocietyManagementSystem.View.Admin
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label houseData;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl houseData;
 
         /// <summary>
         /// UserGV control.

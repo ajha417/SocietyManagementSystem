@@ -74,21 +74,22 @@ namespace SocietyManagementSystem.View.Admin
                     string usernameStr = usernameTV.Value;
                     string passwordStr = passwordTV.Value;
                     string ExDateStr = ExDate.Value;
+                    string societyNameStr = societyNameDD.SelectedItem.ToString();
 
                     // string Query2 = "SELECT SID FROM SocietyMst WHERE Sname='" + SocietyCB.SelectedItem.ToString() + "'";
-                   // string Query2 = "SELECT * FROM SocietyMst,HouseMst";
+                    // string Query2 = "SELECT * FROM SocietyMst,HouseMst";
                     string Query2 = "SELECT SocietyMst.SID,HouseMst.HID FROM SocietyMst,HouseMst WHERE SocietyMst.Sname='" + societyNameDD.SelectedItem.ToString() + "' and HouseMst.HID='"+HouseNoDD.SelectedItem.ToString()+"'";
                     UserGV.DataSource = conn.getData(Query2);
                     UserGV.DataBind();
 
                     SocietyData = Convert.ToInt32(UserGV.Rows[0].Cells[0].Text);
                     HouseData = Convert.ToInt32(UserGV.Rows[0].Cells[1].Text);
-                    societyData.Text = UserGV.Rows[0].Cells[0].ToString();
-                    houseData.Text = UserGV.Rows[0].Cells[0].ToString();
+                    //societyData.Text = UserGV.Rows[0].Cells[0].ToString();
+                    //houseData.Text = UserGV.Rows[0].Cells[0].ToString();
 
-                    string Query = "INSERT INTO UserMst Values('{0}','{1}','{2}','{3}','{4}',{5},{6},{7},'{8}','{9}','{10}','{11}')";
+                    string Query = "INSERT INTO UserMst Values('{0}','{1}','{2}','{3}','{4}',{5},{6},{7},'{8}','{9}','{10}','{11}','{12}')";
                    // Query = string.Format(Query,)
-                   Query = string.Format(Query,firstnameStr,lastnameStr,emailStr,mobileStr,birthDateStr,houseno,SocietyData,totalMemberStr,usernameStr,passwordStr,path,ExDateStr, societyNameDD.SelectedItem.ToString());
+                   Query = string.Format(Query,firstnameStr,lastnameStr,emailStr,mobileStr,birthDateStr,HouseData,SocietyData,totalMemberStr,usernameStr,passwordStr,path,ExDateStr, societyNameStr);
                    conn.setData(Query);
                     ErrMsgi.InnerText= "Member added successfully!!!";
 
@@ -98,6 +99,8 @@ namespace SocietyManagementSystem.View.Admin
             catch(Exception ex)
             {
                 ErrMsgi.InnerText = ex.Message;
+                houseData.InnerText = HouseData.ToString();
+                societyData.InnerText = SocietyData.ToString();
             }
         }
     }

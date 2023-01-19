@@ -27,7 +27,10 @@
                     <a class="nav-link text-light" href="HomePage.aspx">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="Search.aspx">SEARCH</a>
+                    <a class="nav-link text-light" href="MyAccount.aspx">MY ACCOUNT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="Complain.aspx">COMPLAIN</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="RentList.aspx">RENT_LIST</a>
@@ -36,10 +39,10 @@
                     <a class="nav-link text-light" href="SellList.aspx">SELL_LIST</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="AdminLogin.aspx">ADMIN</a>
+                    <a class="nav-link text-light" href="Password.aspx">PASSWORD</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="ContactUs.aspx">CONTACT_US</a>
+                 <li class="nav-item">
+                    <a class="nav-link text-light" href="../../View/User/HomePage.aspx">LOGOUT</a>
                 </li>
 
                 

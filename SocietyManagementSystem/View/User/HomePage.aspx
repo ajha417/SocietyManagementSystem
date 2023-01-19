@@ -112,14 +112,18 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="../../Asset/Images/societyImage1.jpg" alt="First slide">
+                        <img class="d-block w-100" src="../../Asset/Images/Jaypee-greens.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../Asset/Images/societyImage2.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="../../Asset/Images/Rise-Resorts-Residence.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../Asset/Images/societyImage1.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="../../Asset/Images/executive-suites--v13704794.jpg" alt="Third slide">
                     </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="../../Asset/Images/e-housing.jpg" alt="Third slide">
+                    </div>
+                    
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

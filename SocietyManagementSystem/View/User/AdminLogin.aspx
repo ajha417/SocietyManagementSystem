@@ -51,14 +51,18 @@
         <br />
 
         <label>Password : </label>
-        <input type="password" class="auto-style1" /><br />
+        <input type="password" class="auto-style1" id="password" runat="server"/><br />
         <br />
 
         <%--<input type="radio" name="loginAs" value="admin"> Admin
             <input type="radio" name="loginAs" value="user"> User<br /><br />--%>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" Text="Login" Style="background: green; color: white" Width="141px" /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" Text="Login" Style="background: green; color: white" Width="141px" OnClick="Button1_Click" /><br />
         <br />
+        <div>
+            <label id="ErrMsg" class="text-danger" runat="server"></label>
+        </div>
     </div>
+    
 
 </asp:Content>

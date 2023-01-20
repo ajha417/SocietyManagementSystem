@@ -47,7 +47,7 @@
             <a class="nav-link text-light" href="VRent.aspx">RENT HOUSE REPORT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="../Login.aspx">LOGOUT</a>
+            <a class="nav-link text-light" href="../User/HomePage.aspx">LOGOUT</a>
           </li>
          </ul>
        </div>

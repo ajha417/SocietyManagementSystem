@@ -72,24 +72,35 @@
 
 
                 <asp:Label ID="Label1" runat="server" Text="Username :"></asp:Label>
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><br />
+                <asp:TextBox ID="userNameTxt" runat="server"></asp:TextBox><br />
                 <br />
 
                 <asp:Label ID="Label2" runat="server" Text="Password :"></asp:Label>
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox><br />
+                <asp:TextBox ID="passwordTxt" runat="server"></asp:TextBox><br />
                 <br />
+                <label id="Errmsgs" class="text-danger" runat="server"></label> <br />
 
-
-                <asp:Button ID="Button1" runat="server" Text="LOGIN" Style="background: green; color: white" /><br />
+                <asp:Button ID="Button1" runat="server" Text="LOGIN" Style="background: green; color: white" OnClick="Button1_Click" /><br />
                 <asp:Label ID="Label4" runat="server" Text="Forget Password?" Style="color: forestgreen"></asp:Label>
             </div>
 
-            <div class="left_column_down">
-                <asp:Label ID="Label5" runat="server" Text="SOCIETY LIST"></asp:Label>
-            </div>
+            
 
             <!-- society list-->
             <div class="society_list">
+                <asp:GridView ID="SocietyList" style="width:360px;" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+                    <AlternatingRowStyle BackColor="White" />
+                    <EditRowStyle BackColor="#2461BF" />
+                    <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#EFF3FB" />
+                    <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                    <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                    <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                    <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                    <SortedDescendingHeaderStyle BackColor="#4870BE" />
+                </asp:GridView>
             </div>
         </div>
 
@@ -112,14 +123,18 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="../../Asset/Images/societyImage1.jpg" alt="First slide">
+                        <img class="d-block w-100" src="../../Asset/Images/Jaypee-greens.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../Asset/Images/societyImage2.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="../../Asset/Images/Rise-Resorts-Residence.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../Asset/Images/societyImage1.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="../../Asset/Images/executive-suites--v13704794.jpg" alt="Third slide">
                     </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="../../Asset/Images/e-housing.jpg" alt="Third slide">
+                    </div>
+                    
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

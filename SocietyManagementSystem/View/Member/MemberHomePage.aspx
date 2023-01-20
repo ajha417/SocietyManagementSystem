@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Member/MemberMasterPage.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="SocietyManagementSystem.View.Member.HomePage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Member/MemberMasterPage.Master" AutoEventWireup="true" CodeBehind="MemberHomePage.aspx.cs" Inherits="SocietyManagementSystem.View.Member.HomePage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
@@ -23,7 +23,7 @@
         .left_column {
             border: solid;
             border-color: forestgreen;
-            height:200px;
+            height: 200px;
         }
 
         .left_column_down {
@@ -71,9 +71,11 @@
 
                     <asp:Label ID="Label6" runat="server" Text="username"></asp:Label>
                 </div>
-                <br /><br /><br />
+                <br />
+                <br />
+                <br />
                 <asp:Label ID="Label1" runat="server" Text="photo"></asp:Label>
-               
+
             </div>
 
             <div class="left_column_down">
@@ -92,6 +94,22 @@
             <br />
             <div class="welcome_label">
                 <label>Welcome to E-Housing Helping Society</label>
+            </div>
+            <br />
+            <br />
+
+
+            <div class="house_image">
+                <img src="../../Asset/Images/house.jpg" style="height: 150px; width: 150px; margin-left: 20px;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label2" runat="server" Text="Society Name : " style="color:coral"></asp:Label>
+                <asp:Label ID="Label4" runat="server" Text="name" style="color:coral"></asp:Label><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
+            </div>
+            
+
+            <div>
+                
             </div>
             <br />
 

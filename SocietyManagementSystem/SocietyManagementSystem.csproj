@@ -71,6 +71,7 @@
     <Content Include="Asset\Images\e-housing.jpg" />
     <Content Include="Asset\Images\EHousing.jpg" />
     <Content Include="Asset\Images\EHousingg.jpg" />
+    <Content Include="Asset\Images\house.jpg" />
     <Content Include="Asset\Images\societyImage1.jpg" />
     <Content Include="Asset\Images\societyImage2.jpg" />
     <Content Include="Asset\Images\societyImage3.jpg" />
@@ -103,7 +104,7 @@
     <Content Include="View\Admin\VHouse.aspx" />
     <Content Include="View\Admin\VMember.aspx" />
     <Content Include="View\Member\Complain.aspx" />
-    <Content Include="View\Member\HomePage.aspx" />
+    <Content Include="View\Member\MemberHomePage.aspx" />
     <Content Include="View\Member\MyAccount.aspx" />
     <Content Include="View\Member\Password.aspx" />
     <Content Include="View\Member\RentList.aspx" />
@@ -175,12 +176,12 @@
     <Compile Include="View\Member\Complain.aspx.designer.cs">
       <DependentUpon>Complain.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\Member\HomePage.aspx.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
+    <Compile Include="View\Member\MemberHomePage.aspx.cs">
+      <DependentUpon>MemberHomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\Member\HomePage.aspx.designer.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
+    <Compile Include="View\Member\MemberHomePage.aspx.designer.cs">
+      <DependentUpon>MemberHomePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Member\MemberMasterPage.Master.cs">
       <DependentUpon>MemberMasterPage.Master</DependentUpon>
